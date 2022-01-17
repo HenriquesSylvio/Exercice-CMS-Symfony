@@ -1,0 +1,4 @@
+form:
+  path: /form/{entity_name}/{id}
+  controller: App\Controller\IndexController::form
+  defaults:   { entity_name: 'User' ,id: null }

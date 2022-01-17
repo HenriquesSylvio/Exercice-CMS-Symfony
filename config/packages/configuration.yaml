@@ -1,0 +1,50 @@
+parameters:
+  form:
+    User:
+      main_field: email
+      fields:
+        email:
+          name: email
+          type: EmailType
+          namespace: Symfony\Component\Form\Extension\Core\Type
+          transformer: ~
+          options:
+            required: true
+        firstName:
+          name: firstName
+          type: TextType
+          namespace: Symfony\Component\Form\Extension\Core\Type
+          transformer: ~
+          options:
+            required: true
+        lastName:
+          name: lastName
+          type: TextType
+          namespace: Symfony\Component\Form\Extension\Core\Type
+          transformer: ~
+          options:
+            required: true
+        password:
+          name: password
+          type: PasswordType
+          namespace: Symfony\Component\Form\Extension\Core\Type
+          transformer: ~
+          options:
+            required: true
+    Post:
+      main_field: title
+      fields:
+        title:
+          name: title
+          type: TextType
+          namespace: Symfony\Component\Form\Extension\Core\Type
+          transformer: ~
+          options:
+            required: true
+        description:
+          name: description
+          type: TextType
+          namespace: Symfony\Component\Form\Extension\Core\Type
+          transformer: ~
+          options:
+            required: true
